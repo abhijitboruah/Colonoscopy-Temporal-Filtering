@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.pkl
+runs/
+data/yolo_polyp_grouped/
+data/realcolon/video_info.csv

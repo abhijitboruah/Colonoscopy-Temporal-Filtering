@@ -1,0 +1,99 @@
+{
+ "target": 0.6166666666666667,
+ "ceilings": {
+  "Unfiltered detector": 0.8222222222222222,
+  "Fixed persistence, k=3": 0.6694444444444444,
+  "Fixed persistence, k=6": 0.6166666666666667,
+  "Fixed persistence (k selected)": 0.6694444444444444,
+  "Confidence-adaptive": 0.7055555555555556,
+  "Sliding-window vote": 0.7472222222222222,
+  "Hysteresis": 0.7027777777777777,
+  "Confidence accumulation": 0.6916666666666667,
+  "Motion-compensated persistence": 0.6916666666666667
+ },
+ "selected": {
+  "Unfiltered detector": {
+   "params": {
+    "conf_thresh": 0.55
+   },
+   "fa_per_1k": 48.248248248248245,
+   "sens": 0.6222222222222222,
+   "lat": 9.5
+  },
+  "Fixed persistence, k=3": {
+   "params": {
+    "conf_thresh": 0.175
+   },
+   "fa_per_1k": 17.81781781781782,
+   "sens": 0.6166666666666667,
+   "lat": 11.0
+  },
+  "Fixed persistence, k=6": {
+   "params": {
+    "conf_thresh": 0.05
+   },
+   "fa_per_1k": 14.864864864864865,
+   "sens": 0.6166666666666667,
+   "lat": 13.0
+  },
+  "Fixed persistence (k selected)": {
+   "params": {
+    "conf_thresh": 0.05,
+    "k_max": 6
+   },
+   "fa_per_1k": 14.864864864864865,
+   "sens": 0.6166666666666667,
+   "lat": 13.0
+  },
+  "Confidence-adaptive": {
+   "params": {
+    "conf_thresh": 0.075,
+    "k_max": 8,
+    "gamma": 1.0
+   },
+   "fa_per_1k": 13.513513513513514,
+   "sens": 0.6194444444444445,
+   "lat": 12.0
+  },
+  "Sliding-window vote": {
+   "params": {
+    "conf_thresh": 0.1,
+    "window": 8,
+    "votes": 5
+   },
+   "fa_per_1k": 14.814814814814815,
+   "sens": 0.6166666666666667,
+   "lat": 13.0
+  },
+  "Hysteresis": {
+   "params": {
+    "conf_thresh": 0.1,
+    "tau_high": 0.7,
+    "k_fix": 6
+   },
+   "fa_per_1k": 14.714714714714715,
+   "sens": 0.6194444444444445,
+   "lat": 11.0
+  },
+  "Confidence accumulation": {
+   "params": {
+    "conf_thresh": 0.175,
+    "evidence": 0.5,
+    "min_len": 3
+   },
+   "fa_per_1k": 17.81781781781782,
+   "sens": 0.6166666666666667,
+   "lat": 11.0
+  },
+  "Motion-compensated persistence": {
+   "params": {
+    "conf_thresh": 0.2,
+    "k_fix": 3,
+    "iou_assoc": 0.4
+   },
+   "fa_per_1k": 16.14114114114114,
+   "sens": 0.6194444444444445,
+   "lat": 11.0
+  }
+ }
+}
